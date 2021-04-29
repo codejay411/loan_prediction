@@ -18,9 +18,13 @@
       
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Loan prediction project</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">fill the form for prediction</p>
+      <br><br><h2><b>{{prediction_text}}</b></h2>
     </div>
-    <a class="btn btn-primary" href="./index.html" role="button">Back</a>
-
+    <div>
+    
+    </div>
+    <a class="btn btn-primary" href="./" role="button">Back</a>
+<form action='/predict' method='POST'>
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label"> gender</label>
   <select class="form-select" id="gender" name="gender" aria-label="Default select example">
@@ -108,7 +112,11 @@
 
 
 
-    <button type="submit" class="btn btn-primary">Primary</button>
+
+    <button type="submit" class="btn btn-primary">Predict</button>
+    </form>
+
+    
   </div>
 </section>
     
