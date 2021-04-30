@@ -21,7 +21,6 @@ def predict():
         employed = request.form['employed']
         credit = float(request.form['credit'])
         area = request.form['area']
-        loan = request.form['loan']
         ApplicantIncome = float(request.form['ApplicantIncome'])
         CoapplicantIncome = float(request.form['CoapplicantIncome'])
         LoanAmount = float(request.form['LoanAmount'])
@@ -81,11 +80,6 @@ def predict():
             semiurban=0
             urban=0
 
-        # loan status
-        if(loan=="Y"):
-            loan_y = 1
-        else:
-            loan_y = 0
 
         ApplicantIncomelog = np.log(ApplicantIncome)
         totalincomelog = np.log(ApplicantIncome+CoapplicantIncome)
